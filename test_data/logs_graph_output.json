@@ -1,0 +1,20 @@
+{
+	"vertices": [
+		{
+			"id": "8432",
+			"company": "ACME",
+			"hostname": "",
+			"ip": "10.0.111.160"
+		}
+	],
+	"edges": [
+		{
+			"id": "4rj-6ig-npx-6i8",
+			"inVertex": "8432",
+			"outVertex": "8440",
+			"srcPort": "-1",
+			"destPort": "1433",
+			"timeStamp": "1495329454692"
+		}
+	]
+}

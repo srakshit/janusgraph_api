@@ -1,0 +1,54 @@
+{
+  "requestId": "8569c534-a5b4-46b1-9c50-7ebb59b0e921",
+  "status": {
+    "message": "",
+    "code": 200,
+    "attributes": {}
+  },
+  "result": {
+    "data": [
+      {
+        "vertex": {
+          "id": 8432,
+          "label": "host",
+          "type": "vertex",
+          "properties": {
+            "hostname": [
+              {
+                "id": "4da-6i8-6bp",
+                "value": ""
+              }
+            ],
+            "company_id": [
+              {
+                "id": "3ku-6i8-1l1",
+                "value": "ACME"
+              }
+            ],
+            "vertex_name": [
+              {
+                "id": "3z2-6i8-sl",
+                "value": "10.0.111.160"
+              }
+            ]
+          }
+        },
+        "edge": {
+          "id": "4rj-6ig-npx-6i8",
+          "label": "connection",
+          "type": "edge",
+          "inVLabel": "host",
+          "outVLabel": "host",
+          "inV": 8432,
+          "outV": 8440,
+          "properties": {
+            "dest_port": 1433,
+            "edge_timestamp": 1495329454692,
+            "src_port": -1
+          }
+        }
+      }
+    ],
+    "meta": {}
+  }
+}

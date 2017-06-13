@@ -1,0 +1,16 @@
+C:\Development\Git\janusgraph_api\src\main\java\com\dxc\ess\mss\controller\EventsController.java
+C:\Development\Git\janusgraph_api\src\main\java\com\dxc\ess\mss\gremlin_model\ResponseBody.java
+C:\Development\Git\janusgraph_api\src\main\java\com\dxc\ess\mss\gremlin_model\Vertex.java
+C:\Development\Git\janusgraph_api\src\main\java\com\dxc\ess\mss\gremlin_model\EdgeProperty.java
+C:\Development\Git\janusgraph_api\src\main\java\com\dxc\ess\mss\controller\LogsController.java
+C:\Development\Git\janusgraph_api\src\main\java\com\dxc\ess\mss\gremlin_model\VertexPropertyValue.java
+C:\Development\Git\janusgraph_api\src\main\java\com\dxc\ess\mss\gremlin_model\VertexProperty.java
+C:\Development\Git\janusgraph_api\src\main\java\com\dxc\ess\mss\model\GraphEdge.java
+C:\Development\Git\janusgraph_api\src\main\java\com\dxc\ess\mss\model\GraphVertex.java
+C:\Development\Git\janusgraph_api\src\main\java\com\dxc\ess\mss\model\GraphResponse.java
+C:\Development\Git\janusgraph_api\src\main\java\com\dxc\ess\mss\gremlin_model\Edge.java
+C:\Development\Git\janusgraph_api\src\main\java\com\dxc\ess\mss\gremlin_model\Response.java
+C:\Development\Git\janusgraph_api\src\main\java\com\dxc\ess\mss\Application.java
+C:\Development\Git\janusgraph_api\src\main\java\com\dxc\ess\mss\controller\SimpleCORSFilter.java
+C:\Development\Git\janusgraph_api\src\main\java\com\dxc\ess\mss\gremlin_model\GraphComponent.java
+C:\Development\Git\janusgraph_api\src\main\java\com\dxc\ess\mss\model\Event.java

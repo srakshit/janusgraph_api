@@ -1,0 +1,16 @@
+com\dxc\ess\mss\controller\LogsController.class
+com\dxc\ess\mss\gremlin_model\Edge.class
+com\dxc\ess\mss\model\GraphResponse.class
+com\dxc\ess\mss\gremlin_model\VertexProperty.class
+com\dxc\ess\mss\model\Event.class
+com\dxc\ess\mss\gremlin_model\Response.class
+com\dxc\ess\mss\gremlin_model\EdgeProperty.class
+com\dxc\ess\mss\gremlin_model\ResponseBody.class
+com\dxc\ess\mss\gremlin_model\Vertex.class
+com\dxc\ess\mss\gremlin_model\VertexPropertyValue.class
+com\dxc\ess\mss\gremlin_model\GraphComponent.class
+com\dxc\ess\mss\model\GraphEdge.class
+com\dxc\ess\mss\controller\EventsController.class
+com\dxc\ess\mss\controller\SimpleCORSFilter.class
+com\dxc\ess\mss\model\GraphVertex.class
+com\dxc\ess\mss\Application.class
