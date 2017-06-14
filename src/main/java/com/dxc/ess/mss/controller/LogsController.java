@@ -32,7 +32,6 @@ public class LogsController {
     @Value("${port}")
     private String port;
 
-//    private String uri;
     private HttpHeaders headers;
     private RestTemplate restTemplate;
 
@@ -43,10 +42,6 @@ public class LogsController {
         restTemplate = new RestTemplate();
     }
 
-//    public LogsController(String uri){
-//        this();
-//        this.uri = uri;
-//    }
 
     public String getUri() {
         return "http://"+ip+":"+port+"/";

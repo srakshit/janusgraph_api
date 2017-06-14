@@ -5,6 +5,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+/**
+ * Created by Subham Rakshit on 5/31/17.
+ */
+
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class VertexProperty {
     private List<VertexPropertyValue> hostname;

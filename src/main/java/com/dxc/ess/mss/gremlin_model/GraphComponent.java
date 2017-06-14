@@ -3,6 +3,7 @@ package com.dxc.ess.mss.gremlin_model;
 /**
  * Created by Subham Rakshit on 6/5/17.
  */
+
 public class GraphComponent {
     private Vertex vertex;
     private Edge edge;
