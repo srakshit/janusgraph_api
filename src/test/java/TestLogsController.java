@@ -4,6 +4,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.eclipse.jetty.http.HttpStatus;
 import org.junit.*;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.net.HttpURLConnection;
@@ -17,9 +20,13 @@ import static org.junit.Assert.*;
  */
 
 @RunWith(SpringJUnit4ClassRunner.class)
+@ActiveProfiles(profiles = "local")
+@ContextConfiguration("classpath:xml-config-context.xml")
 public class TestLogsController {
     private static JettyServer server = new JettyServer();
-    private LogsController controller = new LogsController("http://127.0.0.1:10001/");
+
+    @Autowired
+    private LogsController controller;
     private ObjectMapper mapper = new ObjectMapper();
 
     @BeforeClass

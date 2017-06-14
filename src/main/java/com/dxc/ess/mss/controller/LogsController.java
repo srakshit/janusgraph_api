@@ -4,12 +4,14 @@ import com.dxc.ess.mss.gremlin_model.*;
 import com.dxc.ess.mss.model.GraphEdge;
 import com.dxc.ess.mss.model.GraphResponse;
 import com.dxc.ess.mss.model.GraphVertex;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.client.RestTemplate;
@@ -20,11 +22,17 @@ import java.util.*;
  * Created by Subham Rakshit on 5/30/17.
  */
 
-@Configuration
+@Component
 @RestController
 public class LogsController {
 
-    private String uri = "http://127.0.0.1:8182/";
+    @Value("${ip}")
+    private String ip;
+
+    @Value("${port}")
+    private String port;
+
+//    private String uri;
     private HttpHeaders headers;
     private RestTemplate restTemplate;
 
@@ -35,9 +43,13 @@ public class LogsController {
         restTemplate = new RestTemplate();
     }
 
-    public LogsController(String uri){
-        this();
-        this.uri = uri;
+//    public LogsController(String uri){
+//        this();
+//        this.uri = uri;
+//    }
+
+    public String getUri() {
+        return "http://"+ip+":"+port+"/";
     }
 
     @RequestMapping("/logs/graph")
@@ -46,7 +58,7 @@ public class LogsController {
 
         HttpEntity<String> entity = new HttpEntity<>(gremlinQuery, headers);
 
-        Response response = restTemplate.postForObject(uri, entity, Response.class);
+        Response response = restTemplate.postForObject(getUri(), entity, Response.class);
 
         Set<GraphVertex> graphVertices = new HashSet<>();
         Set<GraphEdge> graphEdges = new HashSet<>();

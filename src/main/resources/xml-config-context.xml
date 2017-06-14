@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- scans for annotated classes in the com.company package -->
+    <context:component-scan base-package="com.dxc.ess.mss.controller" />
+
+    <!-- enables annotation based configuration -->
+    <context:annotation-config />
+
+    <beans profile="local">
+        <!-- allows for ${} replacement in the spring xml configuration from the
+            application-default.properties, application-dev files on the classpath -->
+        <context:property-placeholder
+                location="classpath:config/application-default.properties, classpath:config/application-local.properties"
+                ignore-unresolvable="true" />
+    </beans>
+
+    <beans profile="dev">
+        <!-- allows for ${} replacement in the spring xml configuration from the
+            application-default.properties, application-test files on the classpath -->
+        <context:property-placeholder
+                location="classpath:config/application-dev.properties, classpath:config/application-dev.properties"
+                ignore-unresolvable="true" />
+    </beans>
+
+</beans>
